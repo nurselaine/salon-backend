@@ -1,0 +1,27 @@
+{
+  "name": "salon-back-end",
+  "version": "1.0.0",
+  "description": "Website for Loann's Salon\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C and portfolio for Loann's Salon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurselaine/salon-backend.git"
+  },
+  "author": "Elaine Huynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurselaine/salon-backend/issues"
+  },
+  "homepage": "https://github.com/nurselaine/salon-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "firebase": "^9.9.2",
+    "firebase-admin": "^11.0.1",
+    "twilio": "^3.80.0"
+  }
+}
