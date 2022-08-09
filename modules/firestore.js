@@ -7,6 +7,9 @@ app.use(express.json());
 app.use(cors());
 const message = require('./twilio');
 
+console.log('firstore configuration');
+console.log(process.env);
+
 const admin = require('firebase-admin');
 admin.initializeApp({
   credential: admin.credential.cert({
@@ -16,6 +19,8 @@ admin.initializeApp({
   }),
   databaseURL: process.env.FIREBASE_DATABASE_URL
 });
+
+console.log('firebase initialize')
 
 const db = admin.firestore();
 app.use(express.urlencoded({ extended: true }));
@@ -38,6 +43,8 @@ firestore.addReview = async (req, res) => {
     res.status(400).send(error.message);
   }
 };
+
+console.log('get reviews');
 
 firestore.getAllReviews = async (req, res) => {
   try {
