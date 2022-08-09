@@ -47,4 +47,4 @@ app.get('*', res => {
 
 console.log("Application Express Server Listen");
 
-app.listen(3001, () => console.log(`listening on localhost ${PORT}`));
+app.listen(PORT, () => console.log(`listening on localhost ${PORT}`));
