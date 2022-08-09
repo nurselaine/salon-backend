@@ -21,7 +21,9 @@ Loann is an independent hair stylist wanting to promote her business online. Aft
 - [Domain Model + Data Flow](https://www.figma.com/file/pEkToYnDUGIEcniFiL54P7/Meal-Wheel-Data-Flow?node-id=37%3A160)
 - Twilio
 - Firebase
-- Google Business Profile API
+- Fetch
+- React-Icons
+- Bootstrap
 
 ## References
 

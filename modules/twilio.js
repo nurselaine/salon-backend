@@ -43,12 +43,25 @@ message.appointment = async (req, res) => {
   }
 };
 
-message.newReview = async (req, res, review) => {
+message.newReview = async (req, res) => {
+  console.log('hello');
   try {
-    const message = `New review from ${review.name}: ${review.message} submitted ${review.date}`;
+    const review = {
+      name: req.body.name,
+      email: req.body.email,
+      service: req.body.service,
+      review: req.body.review,
+      date: req.body.date
+    };
+    const message = `New ${review.service} review:
+      name: ${review.name}
+      review: ${review.review} 
+      date: ${review.date}
+      email: ${review.email}`;
+    console.log(message);
     sendMessage(message);
-    res.statuc(200).send('message sent!');
-  } catch (eroor) {
+    res.status(200).send('message sent!');
+  } catch (error) {
     res.status(404).send("failed to send message");
   }
 };

@@ -27,11 +27,12 @@ firestore.addReview = async (req, res) => {
   try {
     const userJSON = {
       name: req.body.name,
+      email: req.body.email,
+      service: req.body.service,
       review: req.body.review,
       date: req.body.date
     };
     const reponse = db.collection('reviews').add(userJSON);
-    message.newReview;
     res.status(200).send(userJSON);
   } catch (error) {
     res.status(400).send(error.message);

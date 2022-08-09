@@ -22,6 +22,7 @@ app.post('/updateReview/:id', fireDb.updateReview);
 app.delete('/deleteReview/:id', fireDb.deleteReview);
 
 app.post('/appointments', message.appointment);
+app.post('/newReview', message.newReview);
 
 app.get('*', res => {
   res.send('nothing is here. Try refreshing...')
